@@ -25,7 +25,7 @@ file:
 /** @var App $app */
 $app->configure("retry-policy");
 ```
-5. run `php artisan migrate` to migrate failed jobs table
+### run `php artisan migrate` to migrate failed jobs table
 
 # Usage
 
