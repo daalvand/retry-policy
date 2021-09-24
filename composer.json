@@ -1,5 +1,5 @@
 {
-    "name": "Daalvand/retry-policy",
+    "name": "daalvand/retry-policy",
     "description": "This package is for doing jobs with high reliability",
     "type": "library",
     "license": "MIT",
