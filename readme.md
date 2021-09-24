@@ -4,12 +4,12 @@
 ## install package
 run `composer require daalvand/retry-policy`
 
-4. publish provider
+### publish provider
 
-### Laravel
+#### Laravel
 * `php artisan vendor:publish --provider="Daalvand\RetryPolicy\RetryPolicyServiceProvider"`
 
-### Lumen
+#### Lumen
 * Add the service provider to `bootstrap/app.php` file:
 ```php
 <?php
