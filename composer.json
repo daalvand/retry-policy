@@ -1,0 +1,36 @@
+{
+    "name": "Daalvand/retry-policy",
+    "description": "This package is for doing jobs with high reliability",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew",
+            "email": "mdaalvand@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "daalvand/kafka": "^1",
+        "ext-json": "*",
+        "ext-rdkafka": "*",
+        "opis/closure": "^3.5",
+        "spatie/async": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daalvand\\RetryPolicy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Daalvand\\RetryPolicy\\RetryPolicyServiceProvider"
+            ],
+            "aliases": {
+                "RetryContext": "Daalvand\\RetryPolicy\\Facades\\RetryContext"
+            }
+        }
+    }
+}
